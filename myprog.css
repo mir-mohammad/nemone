@@ -1,0 +1,392 @@
+
+/* html,body{
+    height: 100%;
+} */
+/* 
+div:hover {
+    color: white;
+    
+} */
+
+* {
+    direction: rtl;
+    font-family: "tahoma";
+}
+
+@font-face{
+    src: url("AdobeArabic-Regular.otf");
+    font-family: AdobeArabic;   
+}
+@keyframes example1{
+    0% {background-color: aquamarine;}
+    25% {background-color: mediumaquamarine;}
+   50% {background-color: #3388bb;}
+    75% {background-color: mediumaquamarine;}
+    100% {background-color: aquamarine;}
+} 
+@keyframes example2{
+    from{background-color: yellowgreen;}
+    to{background-color: gold;}
+}
+
+body,html{
+
+    margin: 0%;
+    padding: 0%;
+}
+
+#navbar {
+
+    background-color: rgba(20, 30, 250, 0.5);
+    width: 100%;
+    padding:1% 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+    z-index: 9999;
+}
+
+#navbar:hover{
+    background-color: rgba(20, 30, 250, 1);
+
+}
+
+
+#navbar span{
+    color: white;
+   
+    padding: 1% 1%;
+    border-left: #7788ff 3px solid;
+    transition: all 0.3s;
+} 
+
+#navbar span:hover{
+
+    background-color:#77aaff ;
+}
+
+
+
+ul {
+    
+
+    list-style: none;
+}
+ul li{
+    transition: all 1s;
+    height: 60px;
+    text-align: center;
+    box-shadow: #555 5px 5px 1px;
+    padding: 10px;
+    font-family:AdobeArabic ;
+    font-size: 150%;
+   
+}
+
+ul li:nth-last-child(2n){
+    background-color: #006600;
+}
+ul li:nth-last-child(2n):hover{
+    background-color: #33aa33;
+    transform: scale(1.2);
+}
+ul li:nth-last-child(2n+1){
+    background-color: #008800;
+    
+}
+ul li:nth-last-child(2n+1):hover{
+    background-color: #33bb33;
+    transform: scale(1.2);
+}
+
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+ 
+a:hover{
+    color: white;
+}
+ 
+a:active{
+ color: white;
+
+}
+
+#banner{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top:0;
+    z-index:-1 ;
+}
+
+/* #experience{
+    text-align: justify;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+#education{
+    text-align: justify;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+#about {
+    color: rgb(33, 151, 10);
+    background-color: #e7d9ba;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: red;
+    margin: 60px 10px 1px 1px;
+    /* border-radius: 20px; */
+    border-radius: 30px 10px 30px 10px;
+    padding: 10px;
+    width: 10%;
+    min-height: 500px;
+    overflow:auto;
+    text-align: justify;
+    /* position: absolute;
+    right: 0px; */
+    top: 100px;
+    float: right;
+    background-image: url(2.jpg) ,url(1.jpg);
+    background-position: right bottom,left top;
+    background-repeat: no-repeat,repeat;
+    background-size: contain,contain;
+    text-shadow: #333 0 3px 5px;
+}
+#about:hover{
+    background-color: white;
+    transform: scale(1.2);
+    box-shadow: #555 5px 5px 1px;   
+    transition: all 0.3s; 
+
+}
+#maintextwrapper {
+    margin: 30px 5px 50px 5px;
+   
+    margin-bottom: 500px;
+    padding: 30PX 0px;
+    width: 80%;
+    /* background-color:#3528e4 ; */
+    background:repeating-linear-gradient(45deg,#ddd5e7,#9179e7 10%,#605abe 20%,white 30%);
+    position: absolute;
+    
+    right: 10%;;
+    
+    
+    
+
+}
+
+#menu {
+
+    /* background-color: aqua; */
+    width: 30%;
+    position: absolute;
+    /* left: 10px; */
+    top: 50px;
+    /* float: right; */
+    right: 30%;
+    
+}
+
+#wrapper {
+    background-color:rgba(0,100,150,0.5);
+    /* position: absolute;
+    top:100%; */
+    width: 100%;
+    /* margin-top: 500px; */
+    overflow: hidden;
+    
+    
+}
+
+.maintext{
+
+    margin: 30px 13%;
+    padding: 1%;
+    border-radius: 10px;
+    /* outline-style: dotted; */
+    /*border: fuchsia solid;*/
+    /*outline-offset: 10px;*/
+    direction: rtl;
+    text-align: center;
+    font-family:AdobeArabic ;
+    font-size: 200%;
+
+    width: 70%;
+
+    
+    transition: all 0.5s;
+}
+
+
+.maintext::first-line{
+    font-size: large;
+   
+   }
+   
+   .maintext::first-letter{
+       font-size: large;
+   }
+   
+   /* .maintext::after{
+   
+       content: "text test \a\a";
+       white-space: pre;
+   } */
+   
+   .maintext:nth-child(2n+1){
+   
+       background-color:#cdcdcd;
+   }
+   
+   /* .maintext:nth-child(2n+1):hover{
+       color: red;
+   } */
+   
+   
+   .maintext:nth-child(2n){
+   
+       background-color:#dcdcdc;   
+   }
+   /* .maintext:nth-child(2n):hover{
+   
+       background-color:rgb(164, 226, 195);   
+   } */
+   .maintext:hover{
+    background-color: white;
+    transform: scale(1.2);
+    box-shadow: #555 5px 5px 1px;
+}   
+
+#modal_contact > div{
+
+    background-color: aliceblue;
+    padding: 30px;
+    border: black solid 3px;
+    transition: all 0.3s;
+
+}
+#modal_about > div{
+
+    background-color: aliceblue;
+    padding: 30px;
+    border: black solid 3px;
+    transition: all 0.3s;
+
+}
+
+.modal{
+   
+    position: fixed;
+    top: 200px;
+    /* opacity:0; */
+    width: 50%;
+    margin-right: 25%;
+    text-align: center;
+    /* z-index: -2; */
+}
+
+#modal_contact > div:target{
+    opacity:1;
+    z-index: 100; 
+}
+.modal_wrapper{
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200%;
+    z-index: -10;
+    position: fixed;
+    top: 0;
+    transition: all 1s;
+    opacity: 0;
+}
+
+
+.modal_wrapper:target{
+
+    opacity: 1;
+    transform: translateY(-50px);
+    z-index: 999999;
+    
+}
+.close_model a:hover{
+
+    background-color: gray;
+    color: white;
+}
+
+.close_model a{
+
+    color: black;
+    background-color: white;
+    display: inline-block;
+    width: 5mm;
+    height: 5mm;
+    /* padding: 1% 0.5% 0% 0.5%; */
+    border-radius: 50%;
+    border: 2px black solid;
+    z-index: 9999;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size:large;
+    text-align: center;
+    
+}
+ 
+#jump_top{
+    color: black;
+    background-image: url("up1.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    opacity: 1;
+    z-index: 9999;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+#page_top{
+
+    position: absolute;
+    top: 0%;
+}
+
+#jump_down{
+    
+    display: inline-block;
+    margin-top: 500px;
+    width: 100%;
+    background-color: rgba(150, 190, 250, 0.7);
+    /* background-image: url(down.png); */
+    padding: 20px 0;
+}
+#footer{
+    position: fixed;
+    bottom: 0;
+    width: 96%;
+    padding: 2%;
+    background-color: blue;
+    text-align: center;
+    animation-name: example1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: all 0.5s;
+
+}
+#footer:hover{
+    font-size:150%;
+}
